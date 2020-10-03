@@ -31,6 +31,9 @@
 
   /*size*/
   --size-border-radius: 10px;
+
+  /*Animation Duration*/
+  --animation-duration: 300ms;
 }
 /*universal tags*/
 * {
@@ -48,8 +51,18 @@ a {
 }
 
 ul {
-  list-style: none;
   padding-left: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /*typography*/
@@ -78,7 +91,7 @@ p {
   color: var(--color-black);
   margin: 4px 0;
 }
-/*Navbar*/
+/* Navbar */
 
 #navbar {
   display: flex;
@@ -106,5 +119,96 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-white);
+}
+
+/* Home */
+#home {
+  background: var(--color-white) center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid var(--color-blue);
+}
+.home__title,
+.home__description {
+  color: var(--color-dark-blue);
+}
+.home__contact {
+  font-size: var(--font-micro);
+  font-weight: var(--weight-semi-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  color: var(--color-dark-blue);
+  border: 1px solid var(--color-dark-blue);
+  border-radius: var(--size-border-radius);
+}
+
+/*Section common*/
+
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  color: var(--color-blue);
+  margin: auto;
+  border: 2px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.major__icon i {
+  transition: all var(--animation-duration);
+}
+.major__icon i:hover {
+  color: var(--color-dark-blue);
+  transform: rotate(-30deg) scale(1.1);
+}
+.major__title {
+  font-size: var(--font-regular);
+}
+.major__title,
+.major__description {
+  color: var(--color-dark-grey);
+}
+.major__description {
+  font-size: var(--font-small);
+}
+.study_abroad {
+  display: flex;
+  align-items: center;
+}
+.study_abroad img {
+  width: 10%;
+}
+.study__description {
+  margin: 0 20px;
+  text-align: left;
+}
+.country__name,
+.country__period {
+  color: var(--color-light-grey);
+}
+.country__name {
+  font-size: var(--font-small);
+}
+.country__period {
+  font-size: var(--font-micro);
 }

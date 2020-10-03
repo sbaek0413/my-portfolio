@@ -283,3 +283,125 @@ p.skillset {
 .attributes {
   padding: 20px;
 }
+
+/* Work */
+.work__categories {
+  margin: 40px;
+}
+.category__btn {
+  border: 1px solid var(--color-dark-blue);
+  border-radius: var(--size-border-radius);
+  font-size: var(--font-regular);
+  padding: 8px 48px;
+}
+.category__btn.active,
+.category__btn:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.category__btn.active .category__count,
+.category__btn:hover .category__count {
+  opacity: 1;
+  top: 0;
+}
+.category__count {
+  background-color: var(--color-orange);
+  border-radius: 50%;
+  color: var(--color-white);
+  font-size: var(--font-micro);
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  position: relative;
+  top: -20px;
+  left: 4px;
+  opacity: 0;
+  transition: all var(--animation-duration);
+}
+
+.work__projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 250px;
+  margin: 2px;
+  background-color: var(--color-light-white);
+}
+
+.project__img {
+  max-width: 100%;
+  max-width: 100%;
+  align-self: center;
+}
+
+.project__description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.projects:hover .project__description {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+
+.project__description h3 {
+  color: var(--color-white);
+}
+.project__description h3:after {
+  content: "";
+  position: relative;
+  display: block;
+  left: 50%;
+  width: 25px;
+  height: 2px;
+  margin-left: -12px;
+  margin-top: 10px;
+  background-color: var(--color-dark-white);
+}
+/* Contact */
+#contact {
+  background-color: var(--color-blue);
+}
+.contact__title,
+.contact__rights,
+.contact__email {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+}
+
+.contact__links i {
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-dark-blue);
+}

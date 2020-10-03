@@ -240,13 +240,19 @@ p {
   margin: 20px 0;
 }
 
+p.skillset {
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .skillset__left {
   flex-basis: 60%;
   background: var(--color-dark-blue);
   padding: 20px 40px;
 }
 .skill {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 .skill__description {
   display: flex;
@@ -274,6 +280,6 @@ p {
 }
 
 .tools,
-.etc {
+.attributes {
   padding: 20px;
 }

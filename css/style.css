@@ -42,7 +42,7 @@
 }
 body {
   margin: 0;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   cursor: default;
 }
 
@@ -95,19 +95,31 @@ p {
 /* Navbar */
 
 #navbar {
+  position: fixed;
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  background-color: var(--color-blue);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  z-index: 1;
 }
+
+#navbar.navbar--dark {
+  background-color: var(--color-blue);
+  padding: 5px;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
 .navbar__menu {
   display: flex;
+  padding-right: 20px;
 }
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+  padding-left: 20px;
 }
 .navbar__menu__item {
   padding: 8px 12px;
@@ -377,7 +389,7 @@ p.skillset {
   color: var(--color-white);
 }
 .project__description h3:after {
-  content: "";
+  content: '';
   position: relative;
   display: block;
   left: 50%;

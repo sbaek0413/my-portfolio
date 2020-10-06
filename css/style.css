@@ -42,7 +42,7 @@
 }
 body {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   cursor: default;
 }
 
@@ -389,7 +389,7 @@ p.skillset {
   color: var(--color-white);
 }
 .project__description h3:after {
-  content: '';
+  content: "";
   position: relative;
   display: block;
   left: 50%;
@@ -425,6 +425,27 @@ p.skillset {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-dark-blue);
+}
+
+/* arrow up */
+.arrow__up {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  position: fixed;
+  color: var(--color-light-white);
+  background-color: var(--color-dark-blue);
+  bottom: 50px;
+  right: 50px;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+  pointer-events: none;
+}
+.arrow__up.visible {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */

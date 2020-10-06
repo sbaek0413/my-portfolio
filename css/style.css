@@ -172,6 +172,9 @@ p {
   border: 1px solid var(--color-dark-blue);
   border-radius: var(--size-border-radius);
 }
+.home__contact :hover {
+  background-color: var(--color-dark-blue);
+}
 
 /*Section common*/
 
@@ -437,7 +440,7 @@ p.skillset {
   height: 50px;
   font-size: 30px;
   position: fixed;
-  color: var(--color-light-white);
+  color: var(--color-white);
   background-color: var(--color-dark-blue);
   bottom: 50px;
   right: 50px;
@@ -462,6 +465,9 @@ p.skillset {
     align-items: flex-start;
     background-color: var(--color-blue);
   }
+  .section {
+    padding: 20px;
+  }
   .navbar__menu {
     flex-direction: column;
     text-align: center;
@@ -473,12 +479,17 @@ p.skillset {
   }
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
   .skillset {
     flex-direction: column;
+  }
+  .category__btn {
+    padding: 8px 8px;
   }
   .study_abroad img {
     flex-grow: 0.1;
@@ -490,5 +501,13 @@ p.skillset {
     padding: 8px 20px;
     width: 80%;
     height: 80%;
+  }
+  .arrow__up {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    right: 16px;
+    bottom: 16px;
   }
 }

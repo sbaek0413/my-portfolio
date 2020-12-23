@@ -296,6 +296,7 @@ p.skillset {
   height: 3px;
   background-color: var(--color-light-blue);
 }
+
 .skillset__right {
   flex-basis: 40%;
 }
@@ -366,7 +367,6 @@ p.skillset {
 }
 
 .project__img {
-  max-width: 100%;
   max-width: 100%;
   align-self: center;
 }
